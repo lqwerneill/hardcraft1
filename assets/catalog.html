@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог | HandCraft</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">HANDCRAFT</a>
+            <div class="burger" id="burger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li id="nav-auth"><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <span class="section-kicker">Полная коллекция</span>
+        <h1 style="margin-bottom: 1rem;">Наш каталог</h1>
+        <p class="section-text section-text-wide">В каталоге собраны предметы для ключевых зон дома: обеденные столы, кресла, прикроватные тумбы и стулья ручной работы. Каждая модель изготовлена из натуральных материалов и может быть адаптирована под нужные размеры, оттенок покрытия и сценарий использования.</p>
+        <div class="catalog-toolbar fade-in">
+            <div>
+                <span class="catalog-toolbar-label">Категории</span>
+                <div class="category-pills" id="catalog-categories" data-active-category="Все"></div>
+            </div>
+        </div>
+        <div class="grid" id="catalog-grid">
+            <!-- Products loaded by JS -->
+        </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

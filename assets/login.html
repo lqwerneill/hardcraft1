@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход / Регистрация | HandCraft</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">HANDCRAFT</a>
+            <div class="burger" id="burger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <div class="form-container" id="login-form">
+            <h2>Вход</h2>
+            <div class="form-group">
+                <label>Логин</label>
+                <input type="text" id="log-login">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" id="log-pass">
+            </div>
+            <button class="btn" id="login-submit">Войти</button>
+            <p style="margin-top:1rem; cursor:pointer; color:var(--secondary);" id="toggle-to-register">Нет аккаунта? Зарегистрироваться</p>
+            <hr style="margin: 1rem 0;">
+            <p style="font-size: 0.8rem; color:#666; margin-bottom:0.4rem;">Администратор: Логин: admin, Пароль: 123</p>
+            <p style="font-size: 0.8rem; color:#666;">Пользователь: Логин: test, Пароль: 123</p>
+        </div>
+
+        <div class="form-container" id="reg-form" style="display:none;">
+            <h2>Регистрация</h2>
+            <div class="form-group">
+                <label>Имя</label>
+                <input type="text" id="reg-name">
+            </div>
+            <div class="form-group">
+                <label>Логин</label>
+                <input type="text" id="reg-login">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" id="reg-pass">
+            </div>
+            <button class="btn" id="register-submit">Зарегистрироваться</button>
+            <p style="margin-top:1rem; cursor:pointer; color:var(--secondary);" id="toggle-to-login">Уже есть аккаунт? Войти</p>
+        </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandCraft Furniture | Главная</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">HANDCRAFT</a>
+            <div class="burger" id="burger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li id="nav-auth"><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider-container fade-in">
+            <div class="slides">
+                <div class="slide" style="background-image: url('images/slider1.jpg');">
+                    <div class="slide-content">
+                        <h2>Авторская мебель</h2>
+                        <p>Создано вручную с душой, вниманием к деталям и любовью к натуральным материалам.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slaider2.jpg');">
+                    <div class="slide-content">
+                        <h2>Натуральные материалы</h2>
+                        <p>Дуб, ясень, бук и тактильные покрытия, которые красиво стареют вместе с интерьером.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slider3.jpg');">
+                    <div class="slide-content">
+                        <h2>Коллекции под ваш ритм</h2>
+                        <p>Для квартиры, дома, студии и камерных пространств, где важны характер и комфорт.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
+        </div>
+
+        <section class="container fade-in hero-intro text-center">
+            <span class="section-kicker">Студия мебели</span>
+            <h2>Предметы, которые дают интерьеру вес, тепло и собственный голос</h2>
+            <p class="section-text section-text-wide">Мы создаем мебель небольшими сериями и под заказ: проектируем пропорции, подбираем древесину, вручную шлифуем поверхности и подбираем отделку так, чтобы каждый предмет выглядел спокойно, дорого и жил в интерьере десятилетиями.</p>
+            <div class="hero-actions">
+                <a href="catalog.html" class="btn">Перейти в каталог</a>
+                <a href="#home-catalog" class="btn btn-secondary">Смотреть коллекцию</a>
+            </div>
+        </section>
+
+        <section class="container fade-in info-strip">
+            <article class="info-card">
+                <span class="info-number">12+</span>
+                <h3>Лет в ремесле</h3>
+                <p>Работаем с жилыми пространствами, студиями и частными интерьерными проектами.</p>
+            </article>
+            <article class="info-card">
+                <span class="info-number">100%</span>
+                <h3>Ручная доводка</h3>
+                <p>Каждое изделие проходит шлифовку, сборку и финишную обработку вручную.</p>
+            </article>
+            <article class="info-card">
+                <span class="info-number">3 этапа</span>
+                <h3>Прозрачный процесс</h3>
+                <p>Концепция, изготовление, финальная отделка и подготовка к доставке.</p>
+            </article>
+        </section>
+
+        <section class="container fade-in editorial-grid">
+            <div class="editorial-copy">
+                <span class="section-kicker">О компании</span>
+                <h2>Мы не производим обезличенную мебель. Мы собираем характер пространства.</h2>
+                <p>Наша команда работает с мебелью как с архитектурой малого масштаба. Нам важны посадка, пропорция, тактильность и то, как изделие взаимодействует со светом, текстилем и окружающими поверхностями. Поэтому в центре каждой модели не только красота, но и опыт ежедневного использования.</p>
+                <p>В коллекциях HandCraft сочетаются натуральное дерево, спокойная геометрия, фактура масла и продуманная функциональность. Предметы легко вписываются в современный минимализм, теплый японди, эклектичные интерьеры и пространства с акцентом на природные материалы.</p>
+            </div>
+            <div class="editorial-panel">
+                <div class="editorial-badge">Почему нас выбирают</div>
+                <ul class="editorial-list">
+                    <li>Работаем с массивом и долговечными покрытиями без визуального шума.</li>
+                    <li>Помогаем подобрать размеры, оттенок и характер отделки под интерьер.</li>
+                    <li>Соблюдаем баланс между ремесленной теплотой и современной эстетикой.</li>
+                    <li>Создаем мебель, которая хорошо выглядит не только на фото, но и в быту.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container fade-in" id="home-catalog">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">Каталог на главной</span>
+                    <h2>Популярные модели из нашей коллекции</h2>
+                </div>
+                <p class="section-text">Ниже собраны предметы, которые чаще всего выбирают для спальни, столовой и зоны отдыха. У каждого изделия уже есть характер, но его можно адаптировать под ваш интерьер.</p>
+            </div>
+            <div class="grid" id="featured-catalog-grid"></div>
+            <div class="section-actions">
+                <a href="catalog.html" class="btn">Открыть весь каталог</a>
+            </div>
+        </section>
+
+        <section class="container fade-in process-grid">
+            <div class="process-card">
+                <span class="process-step">01</span>
+                <h3>Выбираем модель</h3>
+                <p>Подбираем предмет под задачу: для обеденной зоны, спальни, кабинета или пространства отдыха.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step">02</span>
+                <h3>Согласуем материалы</h3>
+                <p>Уточняем породу дерева, оттенок масла, текстиль и размеры под ваш интерьер.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step">03</span>
+                <h3>Изготавливаем вручную</h3>
+                <p>Собираем, шлифуем и доводим изделие до состояния, в котором оно готово служить годами.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

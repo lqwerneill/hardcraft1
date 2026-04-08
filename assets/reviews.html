@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы и Контакты | HandCraft</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">HANDCRAFT</a>
+            <div class="burger" id="burger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li id="nav-auth"><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <h1>Отзывы клиентов</h1>
+        
+        <div id="reviews-list" style="margin-top:2rem;">
+            <!-- Rendered by JS -->
+        </div>
+
+        <div class="form-container" style="margin: 2rem 0; width: 100%; max-width: 600px;">
+            <h3>Оставить отзыв</h3>
+            <input type="text" id="rev-name" placeholder="Ваше имя" style="width:100%; margin-bottom:10px; padding:10px;">
+            <select id="rev-rating" style="width:100%; margin-bottom:10px; padding:10px;">
+                <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                <option value="4">⭐⭐⭐⭐ (4)</option>
+                <option value="3">⭐⭐⭐ (3)</option>
+                <option value="2">⭐⭐ (2)</option>
+                <option value="1">⭐ (1)</option>
+            </select>
+            <textarea id="rev-text" placeholder="Текст отзыва..." style="width:100%; margin-bottom:10px; padding:10px;"></textarea>
+            <button class="btn" id="add-review-btn">Отправить</button>
+        </div>
+
+        <h2 style="margin-top:4rem;">Мы на карте</h2>
+        <div id="map"></div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
